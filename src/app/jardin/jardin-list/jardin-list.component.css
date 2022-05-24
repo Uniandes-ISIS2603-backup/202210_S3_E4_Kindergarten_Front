@@ -1,0 +1,5 @@
+#bodyDiv{display: flex;}
+
+
+.card-img-top{height: 10rem; border-radius: 40px;}
+.card{margin: 5mm; border-radius: 40px; border-color: thistle;}
