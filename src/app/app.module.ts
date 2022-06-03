@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { JardinModule } from './jardin/jardin.module';
 import { HttpClientModule } from '@angular/common/http';
+import { JardinRoutingModule } from './jardin/jardin-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+      HomeComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     JardinModule,
-    HttpClientModule
+    HttpClientModule,
+    JardinRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

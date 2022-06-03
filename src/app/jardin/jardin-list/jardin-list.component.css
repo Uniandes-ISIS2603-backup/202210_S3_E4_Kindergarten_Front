@@ -1,5 +1,6 @@
 #bodyDiv{display: flex;}
-
+.container-fluid{background-image: url(https://i.pinimg.com/736x/c2/62/f6/c262f6d53e722718dbbd33b715c86485.jpg); background-repeat: no-repeat; background-position: center;
+                    background-size: 50rem;}
 
 .card-img-top{height: 10rem; border-radius: 40px;}
 .card{margin: 5mm; border-radius: 40px; border-color: thistle;}
