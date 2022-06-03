@@ -1,3 +1,16 @@
-<h1 class='display-2 p-3'>
-  Lista de niños de los jardines</h1>
-<app-prueba_ninos></app-prueba_ninos>
+
+<div id="headerDiv" >
+  <nav class="navbar bg-light" >
+      <div class="container-fluid">
+
+      <a class="navbar-brand"  [routerLink]="['']" routerLinkActive="router-link-active"  ><img id="navIcon" src="https://i.pinimg.com/originals/ac/f5/40/acf540af037be8a383152eb1e8677779.jpg">KINDERGARTEN</a>
+
+      <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="button">Filters</button>
+      </form>
+      </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>

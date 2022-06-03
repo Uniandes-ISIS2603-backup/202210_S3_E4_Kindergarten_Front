@@ -3,16 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Prueba_ninosModule } from './prueba_ninos/prueba_ninos.module';
+import { JardinModule } from './jardin/jardin.module';
+import { HttpClientModule } from '@angular/common/http';
+import { JardinRoutingModule } from './jardin/jardin-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+      HomeComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Prueba_ninosModule
+    JardinModule,
+    HttpClientModule,
+    JardinRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
