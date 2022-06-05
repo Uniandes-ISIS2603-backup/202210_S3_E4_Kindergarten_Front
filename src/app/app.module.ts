@@ -7,18 +7,23 @@ import { JardinModule } from './jardin/jardin.module';
 import { HttpClientModule } from '@angular/common/http';
 import { JardinRoutingModule } from './jardin/jardin-routing.module';
 import { HomeComponent } from './home/home.component';
+import { ServicioModule } from './servicio/servicio.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-      HomeComponent
+    HomeComponent
+
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     JardinModule,
+    ServicioModule,
     HttpClientModule,
-    JardinRoutingModule
+    JardinRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

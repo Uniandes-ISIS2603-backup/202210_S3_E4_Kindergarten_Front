@@ -10,6 +10,7 @@ import { JardinService } from '../jardin.service';
 export class JardinListComponent implements OnInit {
 
   jardines:Array<Jardin>=[];
+  jardinBuscado:String='';
 
   constructor(private jardinService:JardinService) { }
 

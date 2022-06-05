@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { Jardin } from './jardin';
+import { JardinDetail } from './jardinDetail';
 
 @Injectable({
   providedIn: 'root'
@@ -14,13 +15,12 @@ export class JardinService {
 
   constructor(private http: HttpClient) { }
 
-  getJardines(): Observable<Jardin[]> {
-    return this.http.get<Jardin[]>(this.jardinesUrl);
+  getJardines(): Observable<JardinDetail[]> {
+    return this.http.get<JardinDetail[]>(this.jardinesUrl);
   }
 
-  getJardinId(id:string):Observable<Jardin>{
-    return this.http.get<Jardin>(this.jardinesUrl+"/"+id);
+  getJardinId(id:string):Observable<JardinDetail>{
+    return this.http.get<JardinDetail>(this.jardinesUrl+"/"+id);
   }
-
 }
 

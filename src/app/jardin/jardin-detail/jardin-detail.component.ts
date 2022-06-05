@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Jardin } from '../jardin';
 import { JardinService } from '../jardin.service';
+import { JardinDetail } from '../jardinDetail';
 
 @Component({
   selector: 'app-jardin-detail',
@@ -11,7 +12,7 @@ import { JardinService } from '../jardin.service';
 export class JardinDetailComponent implements OnInit {
 
   jardinId!: string;
-  @Input() jardin!:Jardin;
+  @Input() jardin!:JardinDetail;
 
   constructor(private route: ActivatedRoute, private jardinService:JardinService) {
 

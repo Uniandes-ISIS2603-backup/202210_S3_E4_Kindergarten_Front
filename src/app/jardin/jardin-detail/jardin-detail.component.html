@@ -4,9 +4,12 @@
       <a class="nav-link active" aria-current="page" >Detalles Jardín</a>
     </li>
   </ul>
+</div>
+
+<div class="container-fluid" style="margin-top: 10mm; margin-bottom: 10mm; margin-right: 10%; margin-left: 10%; max-width: 80%;">
   <div class="container-fluid" id="bodyDiv">
     <div class="container-fluid" id="ulImg">
-      <h5>{{jardin.nombre}}</h5>
+      <h5>Jardín {{jardin.nombre}}</h5>
       <img class="img-fluid rounded" id="imagenPrincipal" src="{{jardin.imagen}}"/>
     </div>
     <div>
@@ -19,24 +22,24 @@
           <li class="list-group-item">Página Web: <a href="{{jardin.paginaWeb}}" target="_blank">{{jardin.paginaWeb}}</a></li>
           <li class="list-group-item">
             <h5 style="text-align: center; margin-bottom: 3mm;">Descripción</h5>
-            <p style="text-align: justify;">{{jardin.descripcion  }}</p>
+            <p style="text-align: justify;">{{jardin.descripcion}}</p>
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="container-fluid" id="serviciosContainer">
+    <!-- <div class="container-fluid" id="serviciosContainer">
       <div><h5 style="text-align: center;">Servicios</h5></div>
       <div class="card" id="cardServicio" style="width: 18rem;" *ngFor="let servicio in jardin.portafolio">
         <img src="{{servicio.imagen}}" class="card-img-top" alt="{{servicio.nombre}}">
         <div class="card-body">
-          <p class="card-text">{{servicio.descripcion}}</p>
+          <p class="card-text">{{"Hola"}}</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
-    <div id="profesoresDiv">
+    <!-- <div id="profesoresDiv">
       <div><h5 style="text-align: center;">Docentes</h5></div>
 
       <div class="container-fluid" id="profesoresContainer" *ngFor="let profesor in listaProfes">
@@ -58,7 +61,7 @@
 
       </div>
 
-    </div>
+    </div> -->
 
 
   </div>
