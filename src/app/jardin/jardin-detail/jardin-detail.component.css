@@ -1,0 +1,13 @@
+#imagenPrincipal{margin-top: 8mm; margin-bottom: 8mm; margin-left: 20mm; margin-right: 20mm; max-height: 25rem; width: 75%;}
+#bodyDiv{margin-top: 10mm;}
+#ulImg{text-align: center; border-style: inset;}
+#cardProfesores{margin-top: 10mm; margin-bottom: 10mm; margin-left: 10mm; margin-right: 5mm;}
+#serviciosContainer{border-style: outset;}
+#profesoresDiv{border-style: outset;}
+#profesoresContainer{display: flex;}
+#cardServicio{margin: 10mm;}
+#detallesDiv{border-style: inset;}
+
+
+
+h5{font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; margin-left: 20mm; margin-top: 5mm;}

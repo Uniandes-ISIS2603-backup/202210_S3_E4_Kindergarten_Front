@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { JardinListComponent } from './jardin-list/jardin-list.component';
 import { JardinDetailComponent } from './jardin-detail/jardin-detail.component';
+import { JardinFormComponent } from './jardin-form/jardin-form.component';
 
 
 const routes: Routes = [{
@@ -14,7 +15,7 @@ const routes: Routes = [{
    {
      path: ':id',
      component: JardinDetailComponent
-   },
+   }
  ]
 }];
 

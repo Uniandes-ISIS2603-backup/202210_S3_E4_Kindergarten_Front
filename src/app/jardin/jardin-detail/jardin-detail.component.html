@@ -1,22 +1,66 @@
-<div class="modal-dialog modal-lg">
-  <div class="card text-center">
-    <div class="card-header">
-      <ul class="nav nav-tabs card-header-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
+<div class="modal-dialog modal-xl">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" >Detalles Jardín</a>
+    </li>
+  </ul>
+  <div class="container-fluid" id="bodyDiv">
+    <div class="container-fluid" id="ulImg">
+      <h5>{{jardin.nombre}}</h5>
+      <img class="img-fluid rounded" id="imagenPrincipal" src="{{jardin.imagen}}"/>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div>
+    <div class="card" id="detallesDiv">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Dirección: {{jardin.direccion}}</li>
+          <li class="list-group-item">Barrio: {{jardin.barrio}}</li>
+          <li class="list-group-item">Teléfono: {{jardin.telefono}}</li>
+          <li class="list-group-item">Costo: ${{jardin.costo| number: '3.0' }}</li>
+          <li class="list-group-item">Página Web: <a href="{{jardin.paginaWeb}}" target="_blank">{{jardin.paginaWeb}}</a></li>
+          <li class="list-group-item">
+            <h5 style="text-align: center; margin-bottom: 3mm;">Descripción</h5>
+            <p style="text-align: justify;">{{jardin.descripcion  }}</p>
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <div class="container-fluid" id="serviciosContainer">
+      <div><h5 style="text-align: center;">Servicios</h5></div>
+      <div class="card" id="cardServicio" style="width: 18rem;" *ngFor="let servicio in jardin.portafolio">
+        <img src="{{servicio.imagen}}" class="card-img-top" alt="{{servicio.nombre}}">
+        <div class="card-body">
+          <p class="card-text">{{servicio.descripcion}}</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="profesoresDiv">
+      <div><h5 style="text-align: center;">Docentes</h5></div>
+
+      <div class="container-fluid" id="profesoresContainer" *ngFor="let profesor in listaProfes">
+
+      <div class="card mb-3" id="cardProfesores" style="width: 30rem;" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="..." class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{profesor.nombre}} </h5>
+              <p class="card-text">{{profesor.descripcion}}</p>
+              <p class="card-text"><small class="text-muted">{{profesor.edad}}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+
   </div>
 </div>
+

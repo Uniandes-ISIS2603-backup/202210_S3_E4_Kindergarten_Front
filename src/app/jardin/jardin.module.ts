@@ -4,6 +4,7 @@ import { JardinComponent } from './jardin.component';
 import { JardinListComponent } from './jardin-list/jardin-list.component';
 import { JardinDetailComponent } from './jardin-detail/jardin-detail.component';
 import { RouterModule } from '@angular/router';
+import { JardinFormComponent } from './jardin-form/jardin-form.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,7 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports:[
-    JardinComponent, JardinListComponent, JardinDetailComponent],
-  declarations: [JardinComponent, JardinListComponent, JardinDetailComponent]
+    JardinComponent, JardinListComponent, JardinDetailComponent, JardinFormComponent],
+  declarations: [JardinComponent, JardinListComponent, JardinDetailComponent, JardinFormComponent]
 })
 export class JardinModule { }
